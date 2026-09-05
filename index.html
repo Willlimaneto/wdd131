@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131| Anderson Lima</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Anderson Lima – Welcome to my home course page, here you will find my information as a software developer student in BYU-Pathway">
+    <meta name="author" content="Anderson Lima">
+    <title>WDD 131 – Dynamic Web Fundamentals – Anderson Lima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>wdd131 - Web fundamentals</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/anderson-lima-102423311/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-jn/1?lang=por">Favorite Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Anderson Lima</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <img src="images/anderson.jpg" alt="Photo of Anderson Lima" width="150">
+                <p>
+                    My name is Anderson Lima and I am a Software Development
+                    student at BYU-Pathway Worldwide. I live in Luanda, Angola,
+                    in Viana (Kapalanga neighborhood). I have a technical
+                    background in Informatics and Management, and Portuguese
+                    is my native language — I am currently improving my
+                    English through this program.
+                </p>
+                <p>
+                    I enjoy solving problems with logic and code, and I am
+                    always looking to learn new tools — from Python to web
+                    development.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>My Goals</h2>
+            <div class="card-content">
+                <ul>
+                    <li>Complete the Software Development degree at BYU-Pathway</li>
+                    <li>Build a solid career in programming</li>
+                    <li>Work as a freelancer and/or develop my own projects</li>
+                    <li>Use my skills to support my family and community in Angola</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Anderson Lima | Angola</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
