@@ -10,7 +10,7 @@ body {
     background-color: #fff;
 }
 
-
+/* HEADER */
 header {
     width: 100%;
     background-color: #1b3a57;
@@ -26,7 +26,7 @@ header {
     padding-bottom: 1rem;
 }
 
-
+/* NAV */
 nav {
     width: 100%;
     background-color: #2b2b2b;
@@ -52,6 +52,7 @@ nav a:hover {
     color: #f4a300;
 }
 
+/* MAIN */
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -67,7 +68,7 @@ main h1 {
     margin-bottom: 1rem;
 }
 
-
+/* CARDS */
 .card {
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -99,6 +100,17 @@ main h1 {
     margin-bottom: 0.5rem;
 }
 
+.card-content a {
+    color: #1b3a57;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
     background-color: #1b3a57;
     color: #fff;
