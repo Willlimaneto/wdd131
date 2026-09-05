@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background-color: #fff;
+}
+
+
+header {
+    width: 100%;
+    background-color: #1b3a57;
+    color: #fff;
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+
+nav {
+    width: 100%;
+    background-color: #2b2b2b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f4a300;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #1b3a57;
+    color: #fff;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content img {
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 4px;
+}
+
+.card-content ul {
+    padding-left: 1.5rem;
+}
+
+.card-content li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #1b3a57;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
