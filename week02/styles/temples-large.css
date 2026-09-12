@@ -1,0 +1,17 @@
+@media (min-width: 700px) {
+  #menu-btn { display: none; }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+  }
+
+  nav a { padding: 0.5rem 1rem; }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
