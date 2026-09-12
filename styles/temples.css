@@ -14,7 +14,7 @@ body {
   background-color: var(--light-bg);
 }
 
-h1, .site-title {
+.site-title {
   font-family: 'Merriweather', serif;
 }
 
