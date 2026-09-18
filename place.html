@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Angola | Country Page</title>
+	<meta name="description" content="A page about Angola">
+	<meta name="author" content="Anderson Lima">
+	<link rel="stylesheet" href="styles/place.css">
+	<script src="scripts/place.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1 class="site-title">Angola</h1>
+	</header>
+
+	<div class="stripe"></div>
+
+	<main>
+		<div class="hero">
+			<picture>
+				<source srcset="images/hero-small.webp" media="(max-width: 600px)">
+				<source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+				<img src="images/hero-large.webp" alt="Aerial view of downtown Luanda" width="1920" height="720">
+			</picture>
+
+			<section class="data">
+				<h2>Data</h2>
+				<p><span class="label">Area:</span> <span id="area">1,246,700 sq km</span></p>
+				<p><span class="label">Population:</span> <span id="population">35,588,000</span></p>
+				<p><span class="label">Capital:</span> <span id="capital">Luanda</span></p>
+				<p><span class="label">Languages:</span> <span id="languages">Portuguese</span></p>
+				<p><span class="label">Currency:</span> <span id="currency">Kwanza</span></p>
+				<p><span class="label">Time Zone:</span> <span id="timezone">UTC+1</span></p>
+				<p><span class="label">Calling Code:</span> <span id="calling-code">+244</span></p>
+				<p><span class="label">Internet TLD:</span> <span id="tld">.ao</span></p>
+			</section>
+
+			<section class="weather">
+				<h2>Weather</h2>
+				<p><span class="label">Temperature:</span> <span id="temp">27 °C</span></p>
+				<p><span class="label">Conditions:</span> <span id="conditions">Sunny</span></p>
+				<p><span class="label">Wind:</span> <span id="wind">10 km/h</span></p>
+				<p><span class="label">Wind Chill:</span> <span id="windchill"></span></p>
+			</section>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; <span id="year"></span> | Anderson Lima | Angola</p>
+		<p>Last Modified: <span id="lastModified"></span></p>
+	</footer>
+</body>
+</html>
