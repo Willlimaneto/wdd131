@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD83D"/>
+      <stop offset="100%" stop-color="#FF9F1C"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8CC8FF"/>
+      <stop offset="100%" stop-color="#2F80ED"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sun rays -->
+  <g fill="#FFB000">
+    <rect x="73" y="17" width="10" height="31" rx="5"/>
+    <rect x="24" y="54" width="31" height="10" rx="5" transform="rotate(45 39.5 59)"/>
+    <rect x="14" y="103" width="31" height="10" rx="5"/>
+    <rect x="45" y="145" width="31" height="10" rx="5" transform="rotate(-45 60.5 150)"/>
+    <rect x="127" y="50" width="31" height="10" rx="5" transform="rotate(-45 142.5 55)"/>
+    <rect x="143" y="96" width="31" height="10" rx="5"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="91" cy="91" r="53" fill="url(#sun)"/>
+
+  <!-- Cloud -->
+  <path
+    d="M54 177
+       C39 177 27 165 27 150
+       C27 135 39 123 54 123
+       C59 123 64 124 68 127
+       C74 108 91 96 112 96
+       C139 96 160 116 162 142
+       C168 138 175 136 183 136
+       C205 136 223 154 223 176
+       C223 199 205 217 182 217
+       H54
+       C39 217 27 205 27 190
+       C27 184 29 180 34 177 Z"
+    fill="url(#cloud)"/>
+
+  <!-- Cloud highlight -->
+  <path
+    d="M61 155 C68 135 84 121 105 117"
+    fill="none"
+    stroke="#B9DDFF"
+    stroke-width="9"
+    stroke-linecap="round"
+    opacity=".55"/>
+</svg>

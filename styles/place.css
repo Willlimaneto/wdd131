@@ -35,7 +35,7 @@ header {
 	height: 10px;
 }
 
-
+/* --- Hero + overlay sections --- */
 .hero {
 	position: relative;
 }
@@ -75,8 +75,18 @@ header {
 	font-weight: bold;
 }
 
-.weather h2::before {
-	content: "";
+/* Weather icon (mobile: SVG image) */
+.weather-icon {
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin: 0 auto 1rem;
+}
+
+#windchill::after {
+	content: " (calculated)";
+	font-size: 0.75rem;
+	color: gray;
 }
 
 footer {
@@ -106,5 +116,9 @@ footer {
 	.weather h2::before {
 		content: "⛅";
 		margin-right: 0.5rem;
+	}
+
+	.weather-icon {
+		display: none;
 	}
 }

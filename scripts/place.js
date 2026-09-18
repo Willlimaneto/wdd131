@@ -1,8 +1,9 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
-const temperature = 27;
-const windSpeed = 10;
+// Valores estáticos (por enquanto)
+const temperature = 27; // °C
+const windSpeed = 10;   // km/h
 
 function calculateWindChill(temp, wind) {
 	return (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1);
