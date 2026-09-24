@@ -1,0 +1,29 @@
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+   display: block;
+   width: 400px;
+   height: auto;
+   margin: 1rem auto;
+   animation: fade 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+}
