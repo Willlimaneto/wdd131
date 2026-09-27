@@ -1,0 +1,229 @@
+:root {
+  --primary-color: #1b3a4b;
+  --secondary-color: #f4a259;
+  --light-bg: #f7f7f2;
+  --text-color: #222;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  line-height: 1.5;
+}
+
+
+/* Header */
+
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+  position: relative;
+}
+
+.site-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+/* Menu button */
+
+#menu-btn {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+/* Navigation */
+
+nav {
+  display: none;
+
+  flex-direction: column;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  background-color: var(--primary-color);
+
+  z-index: 10;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+
+  padding: 0.75rem 1rem;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+
+/* Main */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  margin: 1rem 0 2rem;
+
+  color: var(--primary-color);
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 1.7rem;
+}
+
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+
+/* Temple cards */
+
+figure {
+  background-color: var(--white);
+
+  border-radius: 8px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+figcaption {
+  padding: 1rem;
+}
+
+figcaption h2 {
+  color: var(--primary-color);
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 0.75rem;
+}
+
+figcaption p {
+  margin: 0.35rem 0;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+
+  text-align: center;
+
+  padding: 1rem;
+
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem;
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 600px) {
+
+  #menu-btn {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+
+    flex-direction: row;
+
+    position: static;
+
+    width: auto;
+
+    background-color: transparent;
+  }
+
+  nav a {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1000px) {
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  main h1 {
+    font-size: 2.2rem;
+  }
+}
