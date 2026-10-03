@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+header {
+    background-color: #3b073b;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: #eee8ef;
+    border: 1px solid #b9b1ba;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+label,
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #999;
+    background-color: white;
+    font-size: 1rem;
+}
+
+select,
+input[type="date"],
+input[type="text"] {
+    height: 3.2rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    margin-bottom: 1rem;
+}
+
+.instructions,
+.optional {
+    font-weight: normal;
+    font-style: italic;
+    color: #222;
+}
+
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.rating span {
+    font-size: 2rem;
+}
+
+.rating input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.8rem;
+    font-weight: normal;
+}
+
+.checkbox-label input {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b073b;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a0b5a;
+}
+
+
+footer {
+    background-color: #3b073b;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        margin: 1rem auto;
+    }
+
+    form {
+        padding: 1.2rem;
+    }
+
+    .rating {
+        gap: 0.2rem;
+    }
+
+    .rating span {
+        font-size: 1.3rem;
+    }
+
+    .rating input {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    label,
+    legend {
+        font-size: 1rem;
+    }
+}
