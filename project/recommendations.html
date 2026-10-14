@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the best anime for beginners, explore popular genres and educational series, and send Animefans your own anime suggestion.">
+    <meta name="author" content="Anderson Lima">
+    <title>Animefans Recommendations Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/animefans-logo.png" alt="Animefans logo" width="280" height="93"></a>
+        <button type="button" id="hamburguer-menu" aria-label="Menu" aria-expanded="false">☰</button>
+        <div class="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="recommendations.html" aria-current="page">Recommendations</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Recommendations</h1>
+            <p>Not sure what to watch next? Start with these picks, grouped by what you like.</p>
+        </section>
+
+        <section>
+            <h2>Best for beginners</h2>
+            <div class="card-grid anime-grid">
+                <article>
+                    <img src="images/anime-death-note.webp" alt="Death Note poster" width="190" height="285" loading="lazy">
+                    <h3>Death Note</h3>
+                    <p>A single-season mystery with a clear story that is easy to follow. A great first anime if you like thrillers.</p>
+                </article>
+                <article>
+                    <img src="images/anime-demon-slayer.webp" alt="Demon Slayer poster" width="190" height="285" loading="lazy">
+                    <h3>Demon Slayer</h3>
+                    <p>Beautiful animation and a simple, easy-to-follow story about a boy who becomes a demon hunter.</p>
+                </article>
+                <article>
+                    <img src="images/anime-haikyu.webp" alt="Haikyu!! poster" width="190" height="285" loading="lazy">
+                    <h3>Haikyu!!</h3>
+                    <p>A friendly sports story about teamwork and growing together. No background knowledge needed.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Popular genres</h2>
+            <div class="card-grid">
+                <article>
+                    <img src="images/genre-shonen.webp" alt="Two anime-style martial artists in fighting poses with swirling blue energy, in front of a village and a giant carved mountain" width="300" height="300" loading="lazy">
+                    <h3>Shonen</h3>
+                    <p>Action and adventure stories aimed at teens, full of friendship and training. Examples: Naruto and One Piece.</p>
+                </article>
+                <article>
+                    <img src="images/genre-romance.webp" alt="Anime-style couple holding hands on a street lined with cherry blossom trees" width="300" height="300" loading="lazy">
+                    <h3>Romance</h3>
+                    <p>Stories about love and relationships, from school life to grown-up drama. Example: Toradora!</p>
+                </article>
+                <article>
+                    <img src="images/genre-isekai.webp" alt="Anime-style adventurer with a sword facing a glowing magic portal that shows floating islands and a castle" width="300" height="300" loading="lazy">
+                    <h3>Isekai</h3>
+                    <p>A character is transported to another world, often a fantasy one. Example: Re:Zero.</p>
+                </article>
+                <article>
+                    <img src="images/genre-slice-of-life.webp" alt="Anime-style girl with a straw hat and a basket walking on a dirt path through a quiet village and golden fields" width="300" height="300" loading="lazy">
+                    <h3>Slice of Life</h3>
+                    <p>Calm stories about everyday life, friendship, and small moments. Example: Barakamon.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educational anime</h2>
+            <div class="card-grid anime-grid">
+                <article>
+                    <img src="images/anime-cells-at-work.webp" alt="Cells at Work! poster" width="190" height="285" loading="lazy">
+                    <h3>Cells at Work!</h3>
+                    <p>Explains how the human body works by turning blood cells and germs into characters.</p>
+                </article>
+                <article>
+                    <img src="images/anime-dr-stone.webp" alt="Dr. Stone poster" width="190" height="285" loading="lazy">
+                    <h3>Dr. Stone</h3>
+                    <p>Rebuilds civilization from scratch using real science and engineering ideas.</p>
+                </article>
+                <article>
+                    <img src="images/anime-fullmetal-alchemist-brotherhood.webp" alt="Fullmetal Alchemist: Brotherhood poster" width="190" height="285" loading="lazy">
+                    <h3>Fullmetal Alchemist: Brotherhood</h3>
+                    <p>Its alchemy follows strict rules, and the story raises thoughtful questions about science and ethics.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="suggest">
+            <h2>Suggest an anime</h2>
+            <p class="intro">Do you know a great anime we should add? Tell us about it.</p>
+            <form id="suggestion-form" action="recommendations.html" method="get">
+                <label for="user-name">Your name *</label>
+                <input type="text" name="user-name" id="user-name" autocomplete="name" required>
+
+                <label for="user-email">Email *</label>
+                <input type="email" name="user-email" id="user-email" autocomplete="email" required>
+
+                <label for="anime-title">Anime title *</label>
+                <input type="text" name="anime-title" id="anime-title" required>
+
+                <label for="genre">Favorite genre</label>
+                <select name="genre" id="genre">
+                    <option value="">Choose a genre</option>
+                    <option value="action">Action</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="romance">Romance</option>
+                    <option value="science">Science</option>
+                    <option value="educational">Educational</option>
+                    <option value="sports">Sports</option>
+                </select>
+
+                <fieldset>
+                    <legend>Experience *</legend>
+                    <div class="radio-option">
+                        <input type="radio" name="experience" id="experience1" value="new to anime" required>
+                        <label for="experience1">New to anime</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="experience" id="experience2" value="casual fan">
+                        <label for="experience2">Casual fan</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="experience" id="experience3" value="big fan">
+                        <label for="experience3">Big fan</label>
+                    </div>
+                </fieldset>
+
+                <label for="user-recommendation">Why do you recommend it?</label>
+                <textarea name="user-recommendation" id="user-recommendation" maxlength="300"></textarea>
+
+                <button type="submit" class="button">Send suggestion</button>
+                <p id="form-message" class="message" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="images/animefans-logo.png" alt="Animefans logo" width="280" height="93" loading="lazy">
+        <p>&copy; <span id="year"></span> Animefans</p>
+        <p class="credits">Images: Pixabay and AI-generated artwork. Anime posters belong to their respective owners.</p>
+    </footer>
+</body>
+</html>

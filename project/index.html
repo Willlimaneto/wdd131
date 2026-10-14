@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Animefans helps you discover new anime with release dates, seasons, characters, genres, and recommendations for beginners and fans.">
+    <meta name="author" content="Anderson Lima">
+    <title>Animefans Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/animefans-logo.png" alt="Animefans logo" width="280" height="93"></a>
+        <button type="button" id="hamburguer-menu" aria-label="Menu" aria-expanded="false">☰</button>
+        <div class="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="anime.html">Anime</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <p id="welcome">Welcome to Animefans</p>
+
+        <section class="hero">
+            <h1>Discover your next favorite anime</h1>
+            <p>Release dates, seasons, characters, genres, and recommendations in one place.</p>
+            <a href="anime.html" class="button">Explore Anime</a>
+        </section>
+
+        <section class="cards">
+            <h2>Start here</h2>
+            <div class="card-grid">
+                <article>
+                    <img src="images/card-anime.webp" alt="Rainy anime-style city street at night with glowing neon signs" loading="lazy" width="450" height="300">
+                    <h3>Anime</h3>
+                    <p>Browse series by genre and see the year and number of seasons.</p>
+                    <a href="anime.html">Browse anime →</a>
+                </article>
+                <article>
+                    <img src="images/card-recommendations.webp" alt="Anime-style girl looking up at a glowing tower under a blue night sky" loading="lazy" width="450" height="300">
+                    <h3>Recommendations</h3>
+                    <p>Find the best anime to start with, and suggest your own.</p>
+                    <a href="recommendations.html">See recommendations →</a>
+                </article>
+                <article>
+                    <img src="images/card-about.webp" alt="Silhouette of an anime-style girl near a cottage at sunset" loading="lazy" width="450" height="300">
+                    <h3>About</h3>
+                    <p>Learn what Animefans is, what manga means, and read the FAQ.</p>
+                    <a href="about.html">Learn about Animefans →</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="images/animefans-logo.png" alt="Animefans logo" width="280" height="93" loading="lazy">
+        <p>&copy; <span id="year"></span> Animefans</p>
+        <p class="credits">Images: Pixabay and AI-generated artwork. Anime posters belong to their respective owners.</p>
+    </footer>
+</body>
+</html>

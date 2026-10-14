@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse popular anime on Animefans and filter by genre. See the release year, number of seasons, and a short description for each series.">
+    <meta name="author" content="Anderson Lima">
+    <title>Animefans Anime Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/animefans-logo.png" alt="Animefans logo" width="280" height="93"></a>
+        <button type="button" id="hamburguer-menu" aria-label="Menu" aria-expanded="false">☰</button>
+        <div class="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="anime.html" aria-current="page">Anime</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Anime Library</h1>
+            <p>Browse popular series and filter them by genre. Each card shows the release year and the number of seasons.</p>
+        </section>
+
+        <section class="library">
+            <h2>Popular series</h2>
+            <div class="filter">
+                <label for="genre-filter">Filter by genre</label>
+                <select id="genre-filter" name="genre-filter">
+                    <option value="all">All genres</option>
+                    <option value="action">Action</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="science">Science</option>
+                    <option value="educational">Educational</option>
+                    <option value="sports">Sports</option>
+                </select>
+            </div>
+            <p id="results-count" aria-live="polite"></p>
+            <div id="anime-grid" class="card-grid anime-grid"></div>
+            <p id="empty-message" hidden>No anime found for this genre.</p>
+        </section>
+    </main>
+    <footer>
+        <img src="images/animefans-logo.png" alt="Animefans logo" width="280" height="93" loading="lazy">
+        <p>&copy; <span id="year"></span> Animefans</p>
+        <p class="credits">Images: Pixabay and AI-generated artwork. Anime posters belong to their respective owners.</p>
+    </footer>
+</body>
+</html>
